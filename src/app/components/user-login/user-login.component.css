@@ -1,0 +1,26 @@
+.info, .error {
+	padding: 0px 2px;
+   }
+   .info {
+    color:blue;
+   }
+   .error {
+	color:red;
+   }
+
+   form{
+      margin-left:30%;
+      margin-top:10%;
+      margin-right:30%;
+      margin-bottom: 40%;
+      border-color: rgb(79, 158, 160);
+      border-radius: 5px;
+      border-style: ridge;
+      padding:10px;
+   }
+   button{
+      margin-left: 90%;
+   }
+   #link{
+      margin-left: 50%;
+   }

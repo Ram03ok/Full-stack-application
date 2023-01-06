@@ -1,0 +1,46 @@
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <button type="button" class="btn btn-primary" (click)="addEmpForm()">Add Product</button>
+            <div class="row">
+              <table class='table'>
+                <thead>
+                    <tr class='table-dark'>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Image</th>
+                        <th>Quantity</th>
+                        <th>Brand</th>
+                        <th>Active</th>
+                        <th>Cat_ID</th>
+                    </tr>
+            
+                </thead>
+                <tbody>
+                 <tr *ngFor="let product of products">
+                    <td>{{product.product_name}}</td>
+                    <td>{{product.product_description}}</td>
+                    <td>{{product.price}}</td>
+                    <td><img src="{{product.product_image}}"></td>
+                    <td>{{product.product_quantity}}</td>
+                    <td>{{product.product_brand}}</td>
+                    <td>{{product.active}}</td>
+                    <td>{{product.category_id}}</td>
+                    <td>
+                        <button type="submit" class="btn btn-info" (click)="updateProduct(product.product_id)">
+                        update
+                        </button>
+                        &nbsp;&nbsp;
+                        <button type="submit" class="btn btn-info" (click)="deleteProduct(product.product_id)">
+                            Delete
+                            </button></td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 

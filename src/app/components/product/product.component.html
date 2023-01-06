@@ -1,0 +1,62 @@
+
+<h4><marquee behavior="scroll" direction="left">Welcome to Food basket online shopping app.</marquee> </h4>
+
+<h1><p class="quote-style">Don't starve, just order..</p></h1>
+
+        <div><h2 id="category">Non Vegetarian food</h2></div>
+        <div class="row" id="one">
+              <div class="col-12" *ngFor="let pro of products">
+                <div class="col-lg-4" *ngIf="pro.category_id==1" id="column">
+                    <img src="{{pro.product_image}}" id="image" (click)="goToCart(pro.product_id)">              
+                    <h4><a href="#" style="color:green">{{pro.product_name}}</a></h4>
+                    <h5>Description : {{pro.product_description}}</h5>
+                    <h5>Quantity:{{pro.product_quantity}}</h5>
+                    <h5>Price:Rs {{pro.price}}</h5>         
+                    &nbsp;&nbsp;
+                </div>
+              </div>
+        </div>
+        <br>
+        <div><h2 id="category">Vegetarian food</h2></div>
+        <div class="row" id="two">
+              <div class="col-12" *ngFor="let pro of products">
+                <div class="col-lg-3" *ngIf="pro.category_id==2" id="column">
+                    <img src="{{pro.product_image}}" id="image" (click)="goToCart(pro.product_id)">
+                    <h4><a href="#" style="color:green" >{{pro.product_name}}</a></h4>
+                    <h5>Description : {{pro.product_description}}</h5>
+                    <h5>Quantity:{{pro.product_quantity}}</h5>
+                    <h5>Price:Rs {{pro.price}}</h5>   
+                    &nbsp;&nbsp;
+                </div>
+              </div>
+        </div>
+        <br>
+        <div><h2 id="category">Breakfast</h2></div>
+        <div class="row" id="three">
+              <div class="col-lg-3" *ngFor="let pro of products">
+                <div class="col-lg-12" *ngIf="pro.category_id==3" id="column">
+                    <img src="{{pro.product_image}}" id="image" (click)="goToCart(pro.product_id)">
+                    <h4><a href="#" style="color:green" >{{pro.product_name}}</a></h4>
+                    <h5>Description : {{pro.product_description}}</h5>
+                    <h5>Quantity:{{pro.product_quantity}}</h5>
+                    <h5>Price:Rs {{pro.price}}</h5>  
+                    &nbsp;&nbsp;
+                </div>
+              </div>
+        </div>
+        <br>
+        <div><h2 id="category">snacks</h2></div>
+        <div class="row" id="four">
+              <div class="col-12" *ngFor="let pro of products">
+                <div class="col-lg-3" *ngIf="pro.category_id==4" id="column">
+                    <img src="{{pro.product_image}}" id="image" (click)="goToCart(pro.product_id)">
+                    <h4><a href="#" style="color:green" >{{pro.product_name}}</a></h4>
+                    <h5>Description : {{pro.product_description}}</h5>
+                    <h5>Quantity:{{pro.product_quantity}}</h5>
+                    <h5>Price:Rs {{pro.price}}</h5> 
+                    &nbsp;&nbsp;
+                </div>
+              </div>
+        </div>
+
+      

@@ -1,0 +1,49 @@
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+
+                
+                
+                <form #login="ngForm" novalidate (ngSubmit)="onSubmit()">
+                    <h3>User Registration</h3>
+                    <table>
+                        <tbody>
+                        <tr>
+                        First Name:
+                        <td><input type="text" name="first_name" placeholder="Enter your First Name" [(ngModel)]="user.first_name"></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        Last Name:<td><input type="text" name="last_name" placeholder="Enter your Last Name" [(ngModel)]="user.last_name"></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        User Name:<td><input type="text" name="user_name" placeholder="Enter your User Name" [(ngModel)]="user.user_name"></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        Password:<td><input type="password" name="password" placeholder="Enter your password" [(ngModel)]="user.password"></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        Address:<td><textarea  name="address" rows="4" cols="50" placeholder="Enter your Address" [(ngModel)]="user.address"></textarea></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        Email:<td><input type="email" name="email" placeholder="Enter your Email" [(ngModel)]="user.email"></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        Phone Number:<td><input type="text" name="phone_number" placeholder="Enter your Phone Number" [(ngModel)]="user.phone_number"></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        <td><button class="btn btn-info" type="submit">Submit</button></td>
+                    </tr>
+                    
+                    </tbody>
+                    </table>
+                </form>
+            
+
+            </div></div></div>

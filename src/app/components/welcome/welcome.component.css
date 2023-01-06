@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+#navbar{
+    padding-top:10px;
+  }
+  
+  #logo{
+    font-family:lucida calligraphy;
+    color:green;
+    font-size:35px; 
+   
+  }
+  #home{
+    color:black;
+    font-size:15px;
+    font-family:"Times New Roman", Times, serif;
+    margin-top:10px;
+  }
+  #search{
+    margin-left:30px;
+    margin-right:10px;
+    margin-top:10px;
+    width:350px;
+  }
+  #search_btn{
+    padding-left:10px;
+    padding-right:50px;
+    margin-top:10px;
+    width:5px;
+  }
+  #contact{
+    margin-right:20px;
+    margin-left:50px;
+    margin-top:10px;
+    font-size:15px;
+  }
+  
+  #cart{
+    margin-left:250px;
+    color:black;
+    font-size:15px;
+    margin-top:10px;
+  }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    color: white;
+    padding-top:10px;
+  }
+
+  #seller {
+    font-size:15px;
+    color:black;
+    margin-top:15px;
+    font-family:"Times New Roman", Times, serif;
+  }
+  #nav-list{
+    font-size:15px;
+    color:black;
+    margin-top:15px;
+    font-family:"Times New Roman", Times, serif;
+  }

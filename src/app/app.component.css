@@ -1,0 +1,9 @@
+section{
+    display:flex;
+}
+.side-bar{
+    background-color:aqua;
+    width:15%;
+    margin-left:0;
+    padding-left:2%;
+}

@@ -1,0 +1,79 @@
+
+
+  <router-outlet></router-outlet>
+  <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:rgb(255, 255, 255);">
+    <div class="container-fluid">	
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+                <span class="sr-only"> navigation toggle</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+    <img src="https://media.istockphoto.com/photos/selection-of-various-paleo-diet-products-for-healthy-nutrition-picture-id1151799584?k=20&m=1151799584&s=612x612&w=0&h=DTi-esdXf9HzRgnrN63S-N3dAywKxJ_pgGQaNN7c8dU=" class="navbar-nav navbar-left" alt="no image" width="80px" height="80px">
+    <div class="navbar-brand" >
+      <ul class="nav navbar-nav">
+        <li id="logo">FB</li><br><br>
+        <li style="color:orange;">Food Basket</li>
+      </ul>
+    </div>
+            
+        </div>
+    <div class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav" id="navbar">
+    <li><a href="http://localhost:4200" id="home"><span class="glyphicon glyphicon-home"></span><b>Home</b></a></li>
+    <li><a href="#" id="nav-list"><span></span> <app-category></app-category></a>
+         
+        </li>
+    
+    <li><a href="http://localhost:4200/contact-us" class="glyphicon glyphicon-earphone" style="color:black" id="contact"><span><b id="nav-list">Contact Us</b></span></a></li>
+            <li><input type="text" class="form-control" id="search" name="name" [(ngModel)]="name"></li>
+            <li><button class="btn btn-primary" id="search_btn" placeholder="Search for an item" (click)="searchByName(name)">Search</button></li>
+    <li><a [routerLink]="['/cart']" class="glyphicon glyphicon-shopping-cart" id="cart"><b>Cart</b></a></li>
+    <li><a [routerLink]="['/sellerlogin']" id="seller" (click)="goToSeller()" style="color:black"><span><b>Admin</b></span></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" id="navbar">
+    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav-list" style="margin-top:15px;"><span class="glyphicon glyphicon-user"></span>User</a>
+      <ul class="dropdown-menu">
+                    <li><button type="button" class="login" (click)="loginForm()">Login/SignUp</button></li>
+                </ul>
+    
+    </li>
+        </ul>
+    </div>
+</div>
+</div>
+<p><br/></p>
+<p><br/></p>
+<p><br/></p>
+
+<div class="page-container">
+<!-- HEADER DESKTOP-->
+
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <div class="header-wrap">
+             <!-- <app-category></app-category>-->
+              
+            <router-outlet></router-outlet>
+           <!--<div class="div-page">
+                <app-product></app-product>
+           </div> -->
+         
+            </div>
+            <div class="account-wrap"></div>
+        </div>
+    </div>
+
+ 
+
+ <footer>
+   
+  <ul>
+    <li>Copyright © 2022-2023 Online Food Supplies Pvt Ltd</li>
+    
+  </ul>
+
+ </footer>
+
+

@@ -1,0 +1,34 @@
+
+#image{
+    width:80%;
+    height:80%;
+    margin-top:2px;
+    padding:5px 5px;
+}
+#category{
+    text-align: center;
+}
+.row{
+    width:100%;
+    border-radius: 2px;
+    border-style:ridge;
+    margin-left:1px;
+    border-color: ivory;
+    margin-top:5px;
+    
+}
+#column{
+   
+    margin-top:5px;
+    padding:5px;
+}
+#column:hover{
+    background-color:honeydew;
+    
+
+}
+.quote-style{
+    text-align: center;
+    text-shadow: 0ch;
+    color: coral;
+}

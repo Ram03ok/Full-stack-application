@@ -1,0 +1,17 @@
+#three{
+    border-style:inset;
+}
+div{
+    padding:5px;
+}
+.left{
+    float:right;
+    margin-right:50%;
+}
+.right{
+    float:right;
+    margin-left:30%;
+}
+section{
+    display:flex;
+}

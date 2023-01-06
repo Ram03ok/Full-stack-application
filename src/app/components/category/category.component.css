@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Times New Roman", Times, serif
+}
+
+nav {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:floralwhite;
+    width: 90px;
+    line-height: 10px;
+    padding: 2px;
+    margin-top:15px;
+    margin-left:25px;
+    margin-right:25px;
+    border-radius: 2px;
+    font-family:"Times New Roman", Times, serif;
+}
+
+nav label {
+    color: rgb(20, 20, 20);
+    font-size: 15px;
+    font-weight: 300;
+    display: block;
+    cursor: pointer
+}
+
+.button span {
+    float: right;
+    line-height: 40px;
+    transition: 0.5s
+}
+
+.button span.rotate {
+    transform: rotate(-180deg)
+}
+
+nav ul {
+    position: absolute;
+    background: #1b1b1b;
+    list-style: none;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    display: none
+}
+
+[id^=btn]:checked+ul {
+    display: block
+}
+
+nav .menu:before {
+    position: absolute;
+    content: '';
+    height: 13px;
+    width: 13px;
+    background: #1b1b1b;
+    right: 24px;
+    top: -6px;
+    transform: rotate(45deg);
+    z-index: -1
+}
+
+nav ul li {
+    line-height: 40px;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+nav ul li label {
+    font-size: 13px
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    display: block
+}
+
+nav ul li a:hover,
+nav ul li label:hover {
+    color: rgb(241, 237, 237)
+}
+
+nav ul ul {
+    position: static
+}
+
+nav ul ul li {
+    line-height: 30px;
+    padding-left: 30px;
+    border-bottom: none
+}
+
+nav ul ul li a {
+    color: #e6e6e6;
+    font-size: 13px
+}
+
+nav ul li span {
+    font-size: 16px;
+    float: right;
+    margin-top: 13px;
+    padding: 0 10px;
+    transition: 0.5s
+}
+
+nav ul li span.rotate {
+    transform: rotate(-180deg)
+}
+
+input {
+    display: none
+}

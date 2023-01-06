@@ -1,0 +1,81 @@
+<!--<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <div class="row">
+              <table class='table'>
+                <thead>
+                    <tr class='table-dark'>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Quantity</th>
+                        <th>Incr/Der</th>
+                        <th>Total</th>
+                        <th>Delete</th>
+                    </tr>
+            
+                </thead>
+                <tbody>
+                 <tr *ngFor="let c of cart">
+                    <td>{{c.name}}</td>
+                    <td><img src="{{c.image}}" style="width:50px;height:50px"></td>
+                    <td>{{c.quantity}}</td>
+                    <td><button type="submit" class="Increment p-0" (click)="increment(count)">+
+                        </button>{{count}}
+                        <button type="submit" class="Increment p-0" (click)="decrement(count)">-
+                        </button></td>
+                    <td>{{c.price*count}}</td>
+                   
+                    <td>
+                        <button type="submit" class="glyphicon glyphicon-trash" >
+                            </button></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                    <td>Sub Total</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tfoot>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+ <h3>My Cart</h3>
+ <section>
+    <div class="left"><h3>Total Amount</h3></div>
+    <div class="right"><h3 style="margin-right:0px"><span class="amount">{{Total() | currency: 'INR' }}</span></h3>
+    <button type="submit" class="btn btn-primary">Order</button>
+    </div>
+ </section>
+<div id="one" ng-controller="CartController as ctrl">
+    <div class="card col-xs-12 col-sm-12 col-md-12  col-lg-12 col-xl-12" id="two">
+      <div class="  col-xs-12 col-sm-12 col-md-12  col-lg-12 col-xl-12" style="display:flex" *ngFor="let c of cart" id="three">
+       
+        <div class="my-2 mx-10 col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8" >
+          <h5 class="item-heading">{{c.name}}</h5>
+          <img src="{{c.image}}" style="width:50px;height:50px">
+          <h5 class="item-heading">{{c.quantity}}</h5>
+        </div>
+        <div class="my-4 col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" >
+          <strong>{{ c.price*count | currency:'INR' }}</strong>
+        </div>
+        <div class="mx-10 col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-0 m-0 d-flex " >
+          <button class="Increment p-0 " (click)="increment(count)" >+</button>{{count}}
+          <button class="Decrement p-0 " (click)="decrement(count)">-</button>          
+        </div>
+        <div>
+            <button type="submit" class="glyphicon glyphicon-trash" >
+            </button>
+        </div>
+   
+      </div>
+    </div>
+    
+    
+  </div>
+
+ 

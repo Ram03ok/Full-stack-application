@@ -1,0 +1,22 @@
+
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <div class="row">  
+                <section>
+                <div id="one"> <img src="{{product.product_image}}" style=" width: 80%; height: 80%"></div>
+                <div id="two">
+                    <h2>Details:</h2>
+                <h3>{{product.product_name}}</h3>
+               <h3>Quantity: <h4>{{product.product_quantity}}</h4></h3>
+               <h3>Price: <h4>Rs {{product.price}}</h4></h3>
+                <h3>Description: <h4>{{product.product_description}}</h4></h3>
+                <button type="button" class="btn btn-primary" ><a  style="color:black" (click)="addItemToCart(product)">Add to cart</a></button> 
+                </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 

@@ -1,0 +1,23 @@
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            
+            <form #sellerlogin="ngForm" novalidate  class="login-from" (ngSubmit)="validate()">
+                <tbody>
+                    <tr>
+                    SellerName:
+                    <td><input type="text" name="seller_name" placeholder="Enter your Name" [(ngModel)]="seller_name"></td>
+                </tr>
+                <tr><br></tr>
+                <tr>
+                    Seller ID:<td><input type="text" name="seller_id" placeholder="Enter your ID" [(ngModel)]="seller_id"></td>
+                </tr>
+                <tr><br></tr>
+                    <tr>
+                        <td><button class="btn btn-info" type="submit">Submit</button></td>
+                    </tr>
+                <tr><br></tr> 
+                 
+            </form>
+        
+        </div></div></div>
